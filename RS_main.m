@@ -14,7 +14,7 @@ NOISE=gf(noise,3);                 %产生噪声信号
  
 in_msg=code+NOISE                   %加噪 
  
-for ii = 1:5                         %对5组信号进行译码
+for ii = 1:5 21                        %对5组信号进行译码
     new_msg(ii,:) = rs_rrscode(in_msg(ii,:),all_code_msg,all_msg);
 end
 new_msg%译码输出
